@@ -164,7 +164,6 @@ namespace CompanyOutings1
                     "\n\t1. Per Person" +
                     "\n\t2. Total for outing");
                 int cost = int.Parse(Console.ReadLine());
-
                 while (isRunning)
                     if (cost == 1)
                     {
