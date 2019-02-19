@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58965DCE-7645-4D18-A76F-AEDDB3F20F61}</ProjectGuid>
+    <ProjectGuid>{B9E6C0DA-F019-4DD3-855D-7690A13C4853}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GoldBadgeChallengesRedo</RootNamespace>
-    <AssemblyName>GoldBadgeChallengesRedo</AssemblyName>
+    <RootNamespace>InsuranceClaim</RootNamespace>
+    <AssemblyName>InsuranceClaim</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs" />
-    <Compile Include="MenuRepo.cs" />
+    <Compile Include="Claim.cs" />
+    <Compile Include="ClaimRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

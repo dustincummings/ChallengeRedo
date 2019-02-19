@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58965DCE-7645-4D18-A76F-AEDDB3F20F61}</ProjectGuid>
+    <ProjectGuid>{62E5E9ED-B709-460D-8802-C9DDF937EB3B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GoldBadgeChallengesRedo</RootNamespace>
-    <AssemblyName>GoldBadgeChallengesRedo</AssemblyName>
+    <RootNamespace>CompanyOutings1</RootNamespace>
+    <AssemblyName>CompanyOutings1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs" />
-    <Compile Include="MenuRepo.cs" />
+    <Compile Include="Outing.cs" />
+    <Compile Include="OutingRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
