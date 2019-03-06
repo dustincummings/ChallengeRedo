@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompanyOutings
+namespace EmailGreeting2
 {
     class Program
     {

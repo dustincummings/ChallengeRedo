@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Badge_System
+namespace BadgeSystem
 {
-    public class BadgeRepo
+    class BadgeRepo
     {
         List<string> _doorList = new List<string>();
         Dictionary<int, List<string>> _badgeDictionary = new Dictionary<int, List<string>>();
@@ -31,6 +33,5 @@ namespace Badge_System
             _badgeDictionary.ContainsKey(badge.BadgeId);
             return badge;
         }
-
     }
 }

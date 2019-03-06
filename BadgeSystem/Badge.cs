@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Badge_System
+namespace BadgeSystem
 {
-    public class Badge
+    class Badge
     {
         public int BadgeId { get; set; }
-        public List<string>  DoorList{ get; set; }
+        public List<string> DoorList { get; set; }
 
         public Badge(int badgeId, List<string> doorlist)
         {
@@ -15,6 +17,6 @@ namespace Badge_System
             this.DoorList = doorlist;
         }
         public Badge() { }
-       
+
     }
 }

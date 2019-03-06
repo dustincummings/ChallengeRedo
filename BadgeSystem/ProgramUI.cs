@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Badge_System
+namespace BadgeSystem
 {
-    public class ProgramUI
+    internal class ProgramUI
     {
+
         List<string> _newDoor = new List<string>();
         BadgeRepo _badgeRepo = new BadgeRepo();
         Badge _newBadge = new Badge();
@@ -44,7 +45,7 @@ namespace Badge_System
                     case 3:
                         break;
                     case 4:
-                        ShowAllBadges();
+                        //ShowAllBadges();
                         break;
                     case 5:
                         break;
@@ -96,7 +97,7 @@ namespace Badge_System
             int input = int.Parse(Console.ReadLine());
             if (badges.ContainsKey(input))
             {
-                
+
                 Console.WriteLine($"How would you like to update {_newBadgeDictionary.Keys}:" +
                 "\n\t1. Add Door Access to Badge" +
                 "\n\t2. Remove Door Access from Badge" +
@@ -113,35 +114,22 @@ namespace Badge_System
                     AddDoor();
                     break;
                 case 2:
-                    RemoveDoor();
+                    //RemoveDoor();
                     break;
 
                 default:
                     break;
             }
         }
-        public List<string> RemoveDoor()
-        {
-            //_badgeRepo.GetBadge();
-            var doorList = new List<string>();
+        //public List<string> RemoveDoor()
+        //{
+        //    //_badgeRepo.GetBadge();
+        //    //var doorList = new List<string>();
 
 
 
-            bool addingDoor = true;
-            while (addingDoor)
-            {
-                Console.WriteLine("Please enter in door you would like to give access to. (A1, B2, C3, etc..)");
-                _newDoor.Add(Console.ReadLine().ToUpper());
-                Console.Clear();
-                Console.WriteLine("Are there more doors to add? y/n");
-                string reponse = Console.ReadLine().ToLower();
-                if (reponse == "y")
-                    addingDoor = true;
-                else if (reponse != "y")
-                    addingDoor = false;
-            }
-            return doorList;
-        }
+            
+        //}
 
         public void ShowAllBadges()
         {
@@ -158,6 +146,5 @@ namespace Badge_System
             }
             Console.ReadLine();
         }
-
     }
 }
